@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduTech Pricing</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, rgb(255, 203, 151) , rgb(167, 161, 255));
+        color: #333;
+    }
+    .container {
+        margin-top: 100px;
+        margin-left: 350px;
+        max-width: 800px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .pricing-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .plan {
+        padding: 20px;
+        margin: 0 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .plan h3 {
+        margin-top: 0;
+    }
+    .plan p {
+        margin-bottom: 20px;
+    }
+    .teacher .plan {
+        border: 2px solid orange;
+    }
+    .student .plan {
+        border: 2px solid blue;
+    }
+    .plan.free {
+        border: 2px solid rgb(105, 0, 161);
+    }
+    .plan.free h3 {
+        color: rgb(77, 0, 128);
+    }
+    .button_teacher {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ea9815;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .button_student {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1515ea;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .button:hover {
+        background-color: #553e64;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to EduTech</h1>
+    <p>EduTech is a platform connecting students and teachers, facilitating seamless learning experiences.</p>
+
+    <div class="pricing-table">
+        <div class="plan teacher free">
+            <h3>Teacher</h3>
+            <p>During Beta Stage</p>
+            <p>Includes:</p>
+            <ul>
+                <li>Access to all features</li>
+                <li>Unlimited student-teacher connections</li>
+                <li>24/7 support</li>
+            </ul>
+            <p>Sign up now for free!</p>
+            <a href="http://localhost/web/Teacher_signup.php" class="button_teacher">Sign Up</a>
+        </div>
+        <div class="plan student free">
+            <h3>Student</h3>
+            <p>During Beta Stage</p>
+            <p>Includes:</p>
+            <ul>
+                <li>Access to all features</li>
+                <li>Connect with teachers</li>
+                <li>Submit assignments</li>
+            </ul>
+            <p>Sign up now for free!</p>
+            <a href="http://localhost/web/Student_Signup.php" class="button_student">Sign Up</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

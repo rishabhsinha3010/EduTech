@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Example</title>
+</head>
+<body>
+
+<h2>Hello Students</h2>
+
+<script>
+var jsonData = {
+    "students": [
+        {"name": "John", "age": 20, "grade": "A"},
+        {"name": "Alice", "age": 22, "grade": "B"},
+        {"name": "Bob", "age": 21, "grade": "A-"}
+    ]
+};
+
+var jsonString = JSON.stringify(jsonData);
+console.log("JSON String:", jsonString);
+
+var parsedData = JSON.parse(jsonString);
+console.log("Parsed Data:", parsedData);
+
+console.log("First student:", parsedData.students[0].name);
+console.log("Second student's age:", parsedData.students[1].age);
+</script>
+
+</body>
+</html>
